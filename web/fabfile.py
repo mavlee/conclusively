@@ -11,6 +11,9 @@ def compile_js():
     with cd(code_dir):
         run('make compile')
 
+def do_secret_stuff():
+    sudo('sh /opt/tools/conclusivelysecret')
+
 def deploy():
     with cd(code_dir):
         run('git checkout .')
@@ -21,6 +24,8 @@ def deploy():
         with prefix("source $HOME/.nvm/nvm.sh"):
             run('npm install')
             #compile_js()
+
+        do_secret_stuff()
 
         sudo('make upstart_prod')
         sudo('stop conclusively || true')
