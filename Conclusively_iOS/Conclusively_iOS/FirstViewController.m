@@ -39,11 +39,17 @@ UIButton *button;
     // create label
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(54, 98, 212, 43)];
     label.text = @"Search";
-    label.minimumFontSize = 36;
+    label.font = [UIFont systemFontOfSize:36];
+    label.textAlignment = UITextAlignmentCenter;
+
+    // create text field
+    UITextField *textfield = [[UITextField alloc] initWithFrame:CGRectMake(54, 149, 212, 31)];
+    textfield.borderStyle = UITextBorderStyleRoundedRect;
     
     // add items to view
     [self.view addSubview:button];
     [self.view addSubview:label];
+    [self.view addSubview:textfield];
 }
 
 - (void)buttonPressed
@@ -69,6 +75,7 @@ UIButton *button;
     returnStr = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title" message:returnStr delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles: nil];
     [alert show];
+    self.parentViewController.tabBarController.selectedViewController = [self.parentViewController.tabBarController.viewControllers objectAtIndex:1];
 }
 
 - (IBAction)sendData:(id)sender {
