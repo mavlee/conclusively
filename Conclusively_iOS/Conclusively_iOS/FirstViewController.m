@@ -9,6 +9,7 @@
 #import "FirstViewController.h"
 
 @implementation FirstViewController
+NSData *data = NULL;
 
 - (void)didReceiveMemoryWarning
 {
@@ -19,6 +20,28 @@
 #pragma mark - View lifecycle
 
 - (IBAction)sendData:(id)sender {
+    [self _makeRequest];
+}
+
+- (void)_makeRequest
+// Starts a connection to download the current URL.
+{
+    NSString *str = "http://kanaflash.com/conclusively/search";
+    NSURL *url = [NSURL URLWithString:str];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [connection start];
+    
+    webData = [[NSMutableData data] retain];
+}
+
+-(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+    [webData setLength: 0];
+}
+-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    [webData appendData:data];
 }
 
 - (void)viewDidLoad
