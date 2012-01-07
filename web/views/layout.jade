@@ -1,0 +1,10 @@
+!!! 5
+html
+  head
+    - if (typeof(title.get()) != "undefined")
+      title #{ title.get() } - Conclusively
+    - else
+      title Conclusively
+  body
+    != body
+
