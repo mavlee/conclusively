@@ -38,6 +38,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendData:" destination="2" eventType="touchDown" id="lr5-O2-EwI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -63,7 +66,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="pke-mL-kw6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="restaurant.jpg" id="pke-mL-kw6">
                                 <rect key="frame" x="40" y="108" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -146,6 +149,7 @@
     </scenes>
     <resources>
         <image name="first" width="16" height="16"/>
+        <image name="restaurant.jpg" width="300" height="203"/>
         <image name="second" width="16" height="16"/>
     </resources>
     <classes>

@@ -26,6 +26,7 @@
 		108DDE9114B7E9E9001FCBC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108DDE6414B7E9E9001FCBC0 /* Foundation.framework */; };
 		108DDE9914B7E9E9001FCBC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 108DDE9714B7E9E9001FCBC0 /* InfoPlist.strings */; };
 		108DDE9C14B7E9E9001FCBC0 /* Conclusively_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 108DDE9B14B7E9E9001FCBC0 /* Conclusively_iOSTests.m */; };
+		10E7EF0B14B7F00A00B5ED43 /* restaurant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10E7EF0A14B7F00A00B5ED43 /* restaurant.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		108DDE9814B7E9E9001FCBC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		108DDE9A14B7E9E9001FCBC0 /* Conclusively_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Conclusively_iOSTests.h; sourceTree = "<group>"; };
 		108DDE9B14B7E9E9001FCBC0 /* Conclusively_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Conclusively_iOSTests.m; sourceTree = "<group>"; };
+		10E7EF0A14B7F00A00B5ED43 /* restaurant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = restaurant.jpg; path = ../../../../Downloads/restaurant.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		108DDE6814B7E9E9001FCBC0 /* Conclusively_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				10E7EF0814B7EE7100B5ED43 /* Assets */,
 				108DDE7114B7E9E9001FCBC0 /* AppDelegate.h */,
 				108DDE7214B7E9E9001FCBC0 /* AppDelegate.m */,
 				108DDE7414B7E9E9001FCBC0 /* MainStoryboard_iPhone.storyboard */,
@@ -169,6 +172,14 @@
 				108DDE9714B7E9E9001FCBC0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10E7EF0814B7EE7100B5ED43 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				10E7EF0A14B7F00A00B5ED43 /* restaurant.jpg */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 				108DDE8014B7E9E9001FCBC0 /* first@2x.png in Resources */,
 				108DDE8514B7E9E9001FCBC0 /* second.png in Resources */,
 				108DDE8714B7E9E9001FCBC0 /* second@2x.png in Resources */,
+				10E7EF0B14B7F00A00B5ED43 /* restaurant.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +477,7 @@
 				108DDEA114B7E9E9001FCBC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		108DDEA214B7E9E9001FCBC0 /* Build configuration list for PBXNativeTarget "Conclusively_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +486,7 @@
 				108DDEA414B7E9E9001FCBC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

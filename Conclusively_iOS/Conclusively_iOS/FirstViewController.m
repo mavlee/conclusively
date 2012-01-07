@@ -18,6 +18,9 @@
 
 #pragma mark - View lifecycle
 
+- (IBAction)sendData:(id)sender {
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
